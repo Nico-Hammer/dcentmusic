@@ -1,8 +1,5 @@
 # Setup
-<<<<<<< HEAD
 Below is a condensed version of the setup instructions from [anchor-lang](https://www.anchor-lang.com/docs/installation)
-=======
->>>>>>> 544c3fab9b62f7d062b53d9a564937a467a3b489
 ## Dependencies
 To build the program you will need a linux system or a windows system capable of running WSL2 as well as the following packages:
 * build-essential
