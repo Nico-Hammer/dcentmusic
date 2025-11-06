@@ -23,6 +23,8 @@ The solana setup is multiple steps, which are:
 ## Project commands
 * use `anchor build` to build the project
 * use `anchor test` to run the tests specified in the tests folder
+    - use `anchor test --skip-local-validator` if you have the `solana-test-validator` running in another terminal alread
+    - as of 11/5/2025 the `anchor test` command does not work due to path problems I think, manually run the test command instead (in this case it is `npx ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"`)
 * use `anchor deploy` to deploy the program to the solana cluster specifed in the `Anchor.toml` file, if this isnt changed then it should be the solana-test-validator running in the background from above
 # Planned features
 1. Solana blockchain integration
