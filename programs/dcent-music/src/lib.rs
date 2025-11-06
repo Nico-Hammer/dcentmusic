@@ -7,7 +7,14 @@ pub mod dcent_music {
     use super::*;
 
     pub fn initialize(ctx: Context<Initialize>) -> Result<()> {
-        msg!("Greetings from: {:?}", ctx.program_id);
+        let mut x = 0;
+        for n in 1..10{
+            if n == 10{
+                break;
+            }
+            x += n;
+        }
+        msg!("Greetings from: {:?}\nValue of x: {:?}", ctx.program_id,x);
         Ok(())
     }
 }
