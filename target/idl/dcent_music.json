@@ -1,0 +1,96 @@
+{
+  "address": "FoifQqF6jRL6nzfkF7EpWsjTEdfA4cHx7ikb5zraMq1V",
+  "metadata": {
+    "name": "dcent_music",
+    "version": "0.1.0",
+    "spec": "0.1.0",
+    "description": "Created with Anchor"
+  },
+  "instructions": [
+    {
+      "name": "initialize",
+      "discriminator": [
+        175,
+        175,
+        109,
+        31,
+        13,
+        152,
+        155,
+        237
+      ],
+      "accounts": [
+        {
+          "name": "new_account",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "signer",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "system_program",
+          "address": "11111111111111111111111111111111"
+        }
+      ],
+      "args": [
+        {
+          "name": "data",
+          "type": "u64"
+        },
+        {
+          "name": "input",
+          "type": "string"
+        }
+      ]
+    }
+  ],
+  "accounts": [
+    {
+      "name": "NewAccount",
+      "discriminator": [
+        176,
+        95,
+        4,
+        118,
+        91,
+        177,
+        125,
+        232
+      ],
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "data",
+            "type": "u64"
+          },
+          {
+            "name": "input",
+            "type": "string"
+          }
+        ]
+      }
+    }
+  ],
+  "types": [
+    {
+      "name": "NewAccount",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "data",
+            "type": "u64"
+          },
+          {
+            "name": "input",
+            "type": "string"
+          }
+        ]
+      }
+    }
+  ]
+}
