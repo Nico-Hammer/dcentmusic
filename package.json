@@ -7,7 +7,8 @@
   },
   "dependencies": {
     "@coral-xyz/anchor": "^0.31.1",
-    "dotenv": "^17.2.3"
+    "dotenv": "^17.2.3",
+    "node": "^20.19.6"
   },
   "devDependencies": {
     "@coral-xyz/anchor": "^0.31.1",

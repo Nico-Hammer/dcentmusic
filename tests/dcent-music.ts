@@ -18,10 +18,10 @@ describe("dcent_music", () => {
  
     // Send transaction
     const data = new BN(42);
-
+    const input = "testing";
 
     const transactionSignature = await program.methods
-      .initialize(data)
+      .initialize(data,input)
       .accounts({
         newAccount: newAccountKp.publicKey,
         signer: wallet.publicKey,
@@ -36,6 +36,8 @@ describe("dcent_music", () => {
  
     console.log("Transaction signature: ", transactionSignature);
     console.log("On-chain data is:", newAccount.data.toString());
+    console.log("On-chain input is:", newAccount.input);
     assert(data.eq(newAccount.data));
+    assert(input === newAccount.input);
   });
 });
