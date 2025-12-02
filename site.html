@@ -26,8 +26,7 @@
       try {
         const response = await axios.post('/initialize', { data, input });
         document.getElementById('transactionStatus').innerText = `Transaction successful: ${response.data.signature}`;
-        document.getElementById('transactionData').innerText = `Transaction Data: ${response.data.data}`;
-        document.getElementById('transactionData').innerText = `Transaction Data: ${response.data.input}`;
+        document.getElementById('transactionData').innerHTML = `<p>Data: ${response.data.data}</p><p>Input: ${response.data.input}</p>`;
       } catch (error) {
         document.getElementById('transactionStatus').innerText = `Error: ${error.message}`;
       }

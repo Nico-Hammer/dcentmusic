@@ -1,0 +1,44 @@
+{
+  "address": "FoifQqF6jRL6nzfkF7EpWsjTEdfA4cHx7ikb5zraMq1V",
+  "metadata": {
+    "name": "dcent_music",
+    "version": "0.1.0",
+    "spec": "0.1.0"
+  },
+  "instructions": [
+    {
+      "name": "initialize",
+      "discriminator": [175, 175, 109, 31, 13, 152, 155, 237],
+      "accounts": [
+        {
+          "name": "newAccount",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "signer",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "systemProgram",
+          "address": "11111111111111111111111111111111"
+        }
+      ],
+      "args": [
+        {"name": "data", "type": "u64"},
+        {"name": "input", "type": "string"}
+      ]
+    }
+  ],
+  "accounts": [
+    {
+      "name": "NewAccount",
+      "discriminator": [176, 95, 4, 118, 91, 177, 125, 232],
+      "fields": [
+        {"name": "data", "type": "u64"},
+        {"name": "input", "type": "string"}
+      ]
+    }
+  ]
+}
